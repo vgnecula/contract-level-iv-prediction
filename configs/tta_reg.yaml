@@ -1,0 +1,39 @@
+seed: 42
+
+data:
+  dataset_entries_dir: data/dataset_entries/
+
+output:
+  root_dir: models_output/tta_reg/
+
+task:
+  type: regression
+  model_builder: tta_regression
+  target_key: targets_mag
+
+splits:
+  # one CV split: (train_ratio, val_ratio)
+  - train_ratio: 0.6
+    val_ratio: 0.2
+  - train_ratio: 0.7
+    val_ratio: 0.15
+  - train_ratio: 0.8
+    val_ratio: 0.10
+
+model:
+  d_model: 192
+  nhead: 8
+  num_layers: 3
+  dropout: 0.05
+
+training:
+  batch_size: 1
+  effective_batch_size: 32
+  epochs: 200
+  min_epochs: 30
+  patience: 40
+  learning_rate: 0.0003
+  weight_decay: 0.00001
+  beta1: 0.9
+  beta2: 0.999
+  use_scheduler: true

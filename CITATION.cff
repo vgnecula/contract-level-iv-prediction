@@ -1,0 +1,47 @@
+cff-version: 1.2.0
+title: "Contract-Level Binary Prediction of Implied Volatility Surfaces Using Transformers"
+message: "If you use this codebase or results in academic work, please cite this work."
+authors:
+  - family-names: Necula
+    given-names: Vladimir
+  - family-names: Dai
+    given-names: Wei
+  - family-names: Chambers
+    given-names: Donald R.
+  - family-names: Liebner
+    given-names: Jeffrey
+  - family-names: Liang
+    given-names: Paul Pu
+  - family-names: Lu
+    given-names: Qin
+    suffix: CFA
+
+version: "0.1.0"
+date-released: 2025-11-23
+
+keywords:
+  - implied volatility
+  - options
+  - transformers
+  - time-series
+  - finance
+
+preferred-citation:
+  type: article
+  title: "Contract-Level Binary Prediction of Implied Volatility Surfaces Using Transformers"
+  authors:
+    - family-names: Necula
+      given-names: Vladimir
+    - family-names: Dai
+      given-names: Wei
+    - family-names: Chambers
+      given-names: Donald R.
+    - family-names: Liebner
+      given-names: Jeffrey
+    - family-names: Liang
+      given-names: Paul Pu
+    - family-names: Lu
+      given-names: Qin
+      suffix: CFA
+  journal: "Working Paper"
+  year: 2025
